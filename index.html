@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <title>Blank Template</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0" name="viewport">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <script type="text/javascript" src="js/lib/jquery-1.11.2.min.js"></script>
+</head>
+<body data-ng-controller="mainCtrl"> 
+    <!-- ========== -->
+    <!-- NAVIGATION -->
+    <div id="top">
+        <div data-ui-view="navigation" id="navigationView"></div>
+    </div>
+    <!-- ============ -->
+    <!-- MAIN CONTENT -->
+    <div id="main">
+        <div data-ui-view="content" id="mainView"></div>
+    </div>
+    <!-- ====== -->
+    <!-- FOOTER -->
+    <div id="bottom">
+        <div data-ui-view="footer" id="footerView"></div>
+    </div>
+    <script data-main="js/main.js" src="js/lib/require.js"></script>
+</body>
+</html>
